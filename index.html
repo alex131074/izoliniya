@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Изолиния – инженерные изыскания для проектирования и строительства</title>
+<meta name="description" content="Изолиния: инженерно-геодезические, геологические и экологические изыскания, лазерное сканирование и мониторинг деформаций. Отчёт, который проходит экспертизу.">
+<meta property="og:title" content="Изолиния – точная модель местности до первого ковша">
+<meta property="og:description" content="Инженерные изыскания для проектирования и строительства: геодезия, геология, экология, лазерное сканирование.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b1622">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#hero" aria-label="Изолиния, в начало">
+      <svg class="logo-m" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 28c6-10 12-14 20-12s9 9 8 14" /><path d="M10 31c5-7 10-10 16-9s7 5 6 9" /><path d="M14 34c4-4 7-6 11-5s5 3 4 5" /><circle cx="25" cy="17" r="2.2" /></svg>
+      <span>Изолиния</span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#about">О компании</a><a href="#services">Услуги</a><a href="#industries">Отрасли</a><a href="#process">Как работаем</a><a href="#projects">Проекты</a>
+    </nav>
+    <a class="btn btn-a btn-s" href="#contacts">Запросить смету</a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Меню"><span></span><span></span></button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Меню" hidden>
+    <a href="#about">О компании</a><a href="#services">Услуги</a><a href="#industries">Отрасли</a><a href="#process">Как работаем</a><a href="#projects">Проекты</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero" id="hero" aria-labelledby="hero-h">
+  <canvas id="gl3d" aria-hidden="true"></canvas>
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <p class="coord" id="coord">59.9386° N · 30.3141° E · H 12,4 м</p>
+    <h1 id="hero-h">Точная модель местности <span>до&nbsp;первого ковша</span></h1>
+    <p class="lead">Инженерные изыскания для проектирования и&nbsp;строительства: геодезия, геология, экология, лазерное сканирование. Сдаём отчёт, который проходит экспертизу, и&nbsp;сопровождаем до&nbsp;положительного заключения.</p>
+    <div class="cta">
+      <a class="btn btn-a" href="#contacts">Рассчитать стоимость</a>
+      <a class="btn btn-g" href="#projects">Смотреть проекты</a>
+    </div>
+    <div class="scan">
+      <button class="btn btn-scan" id="scanBtn" type="button" aria-pressed="false"><span class="dot" aria-hidden="true"></span><span id="scanT">Запустить сканирование</span></button>
+      <p class="scan-s" id="scanS" role="status">Рельеф по горизонталям через 1 м</p>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+
+<section class="proof" aria-label="Компания в цифрах">
+  <div class="wrap proof-g">
+    <div><b data-n="1240">1 240</b><span>объектов с&nbsp;2008 года</span></div>
+    <div><b data-n="97" data-s="%">97%</b><span>отчётов принято экспертизой с&nbsp;первого раза</span></div>
+    <div><b>±5&nbsp;мм</b><span>точность планово-высотной съёмки</span></div>
+    <div><b data-n="38">38</b><span>регионов, свои полевые бригады</span></div>
+  </div>
+  <div class="wrap certs">
+    <span>Член СРО изыскателей</span><span>ISO 9001</span><span>Аттестованная грунтовая лаборатория</span><span>Свидетельства о поверке приборов</span>
+  </div>
+</section>
+
+<section class="sec about" id="about" aria-labelledby="about-h">
+  <div class="wrap about-in">
+    <figure class="about-big"><img src="assets/img/field.webp" alt="Геодезист с роботизированным тахеометром на краю строительной площадки" width="1376" height="768" loading="lazy" decoding="async"><figcaption>Полевая бригада на&nbsp;съёмке котлована</figcaption></figure>
+    <div class="about-t">
+      <p class="eyebrow">О компании</p>
+      <h2 id="about-h">Сами выходим в&nbsp;поле&nbsp;– сами отвечаем за&nbsp;отчёт</h2>
+      <p class="sub">«Изолиния» начиналась в&nbsp;2008 году с&nbsp;двух геодезистов и&nbsp;одного тахеометра. Сегодня это 140 инженеров, своя грунтовая лаборатория и&nbsp;парк приборов с&nbsp;ежегодной поверкой. Работы не&nbsp;перепродаём субподрядчикам: от&nbsp;первой точки на&nbsp;местности до&nbsp;ответа экспертизе объект ведёт одна команда.</p>
+      <ul class="facts"><li><b>140</b><span>инженеров и&nbsp;полевых специалистов</span></li><li><b>12</b><span>полевых бригад с&nbsp;транспортом</span></li><li><b>1</b><span>ответственный инженер на&nbsp;объект</span></li></ul>
+      <figure class="about-small"><img src="assets/img/office.webp" alt="Инженеры разбирают облако точек и топографический план на большом мониторе" width="1376" height="768" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec services" id="services" aria-labelledby="services-h">
+  <div class="wrap">
+    <p class="eyebrow">Услуги</p>
+    <h2 id="services-h">Все изыскания под&nbsp;один договор</h2>
+    <p class="sub">Один подрядчик, одна программа работ, один ответственный инженер. Вы&nbsp;не&nbsp;сводите отчёты трёх организаций и&nbsp;не&nbsp;ловите противоречия между ними.</p>
+    <ul class="bento">
+      <li class="b-wide">
+        <img src="assets/img/geodesy.webp" alt="GNSS-приёмник на вехе в поле" width="1000" height="747" loading="lazy" decoding="async" class="b-img">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6v8M14 42l10-28 10 28M18 32h12"/><circle cx="24" cy="6" r="3"/></svg>
+        <h3>Инженерно-геодезические изыскания</h3>
+        <p>Топографическая съёмка М&nbsp;1:500–1:2000, съёмка подземных коммуникаций с&nbsp;согласованием в&nbsp;эксплуатирующих организациях, вынос осей в&nbsp;натуру.</p>
+        <span class="tag">от 5 рабочих дней</span>
+      </li>
+      <li>
+        <img src="assets/img/geology.webp" alt="Буровая установка и керн в ящиках на стройплощадке" width="1000" height="747" loading="lazy" decoding="async" class="b-img">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h32M8 22h32M8 32h32M8 42h32"/><path d="M24 4v40" stroke-dasharray="3 3"/></svg>
+        <h3>Геология</h3>
+        <p>Бурение скважин, статическое зондирование, лабораторные испытания грунтов.</p>
+      </li>
+      <li>
+        <img src="assets/img/ecology.webp" alt="Инженер-эколог отбирает пробу воды из реки" width="1000" height="747" loading="lazy" decoding="async" class="b-img">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 42c-9-6-14-13-14-21a14 14 0 0 1 28 0c0 8-5 15-14 21z"/><path d="M24 30V16M18 22l6-6 6 6"/></svg>
+        <h3>Экология</h3>
+        <p>Радиационное обследование, пробы почвы, воды и&nbsp;воздуха, шум.</p>
+      </li>
+      <li>
+        <img src="assets/img/scanning.webp" alt="Наземный лазерный сканер в промышленном цехе" width="1000" height="747" loading="lazy" decoding="async" class="b-img">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="4"/><path d="M24 4v8M24 36v8M4 24h8M36 24h8M10 10l6 6M32 32l6 6M38 10l-6 6M16 32l-6 6"/></svg>
+        <h3>Лазерное сканирование и&nbsp;BIM</h3>
+        <p>Облако точек фасадов и&nbsp;цехов, обмерные чертежи, модель для реконструкции.</p>
+      </li>
+      <li>
+        <img src="assets/img/monitoring.webp" alt="Тахеометр и отражающие марки на стене здания рядом с котлованом" width="1000" height="747" loading="lazy" decoding="async" class="b-img">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 36l10-10 8 6 18-18"/><path d="M34 14h8v8"/></svg>
+        <h3>Мониторинг деформаций</h3>
+        <p>Осадки и&nbsp;крены зданий рядом со&nbsp;стройкой, отчёт после каждого цикла.</p>
+      </li>
+      <li class="b-wide b-dark">
+        <img src="assets/img/cadastre.webp" alt="Земельные участки с высоты, вид с дрона" width="1000" height="747" loading="lazy" decoding="async" class="b-img">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40V8h32v32z"/><path d="M8 20h32M20 8v32"/></svg>
+        <h3>Межевание и&nbsp;кадастр</h3>
+        <p>Межевой и&nbsp;технический планы, схема расположения участка. Готовим документы для постановки на&nbsp;учёт по&nbsp;результатам той&nbsp;же съёмки&nbsp;– без&nbsp;повторного выезда.</p>
+        <a class="more" href="#contacts">Обсудить объект</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec industries" id="industries" aria-labelledby="ind-h">
+  <div class="wrap ind-in">
+    <div>
+      <p class="eyebrow">Отрасли</p>
+      <h2 id="ind-h">Вы&nbsp;–&nbsp;кто?</h2>
+      <p class="sub">Выберите свою роль, и&nbsp;увидите, что&nbsp;именно получите от&nbsp;нас.</p>
+      <div class="tabs" role="tablist" aria-label="Роль заказчика">
+        <button type="button" role="tab" id="t-dev" aria-selected="true" aria-controls="p-dev">Девелопер</button>
+        <button type="button" role="tab" id="t-pro" aria-selected="false" aria-controls="p-pro" tabindex="-1">Проектировщик</button>
+        <button type="button" role="tab" id="t-ind" aria-selected="false" aria-controls="p-ind" tabindex="-1">Промышленность</button>
+        <button type="button" role="tab" id="t-inf" aria-selected="false" aria-controls="p-inf" tabindex="-1">Инфраструктура</button>
+      </div>
+    </div>
+    <div class="panels">
+      <div class="panel" role="tabpanel" id="p-dev" aria-labelledby="t-dev">
+        <h3>Участок без сюрпризов до&nbsp;покупки</h3>
+        <ul class="chk"><li>Предварительная оценка грунтов и&nbsp;ограничений участка за&nbsp;10&nbsp;дней</li><li>Полный комплект изысканий под&nbsp;экспертизу по&nbsp;одному договору</li><li>Мониторинг соседних зданий на&nbsp;время котлована</li></ul>
+        <p class="kpi"><b>−3&nbsp;недели</b> к&nbsp;сроку, когда геология и&nbsp;геодезия идут параллельно</p>
+      </div>
+      <div class="panel" role="tabpanel" id="p-pro" aria-labelledby="t-pro" hidden>
+        <h3>Данные в&nbsp;вашем формате, а&nbsp;не&nbsp;в&nbsp;PDF</h3>
+        <ul class="chk"><li>Топоплан в&nbsp;DWG и&nbsp;цифровая модель рельефа</li><li>Колонки скважин и&nbsp;разрезы, которые сразу ложатся в&nbsp;проект</li><li>Ответы на&nbsp;замечания экспертизы берём на&nbsp;себя</li></ul>
+        <p class="kpi"><b>1&nbsp;инженер</b> отвечает за&nbsp;весь комплект изысканий</p>
+      </div>
+      <div class="panel" role="tabpanel" id="p-ind" aria-labelledby="t-ind" hidden>
+        <h3>Обмеры действующего цеха без&nbsp;остановки</h3>
+        <ul class="chk"><li>Лазерное сканирование в&nbsp;ночные смены и&nbsp;выходные</li><li>Модель металлоконструкций и&nbsp;трасс под&nbsp;реконструкцию</li><li>Допуск персонала к&nbsp;работам на&nbsp;опасных объектах</li></ul>
+        <p class="kpi"><b>0&nbsp;часов</b> простоя производства на&nbsp;время съёмки</p>
+      </div>
+      <div class="panel" role="tabpanel" id="p-inf" aria-labelledby="t-inf" hidden>
+        <h3>Линейные объекты на&nbsp;десятки километров</h3>
+        <ul class="chk"><li>Аэросъёмка с&nbsp;БПЛА и&nbsp;наземная съёмка переходов</li><li>Изыскания под&nbsp;дороги, сети и&nbsp;трубопроводы</li><li>Несколько бригад одновременно на&nbsp;разных участках трассы</li></ul>
+        <p class="kpi"><b>до 40&nbsp;км</b> трассы в&nbsp;неделю с&nbsp;аэросъёмкой</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec process" id="process" aria-labelledby="process-h">
+  <div class="wrap">
+    <p class="eyebrow">Как работаем</p>
+    <h2 id="process-h">От&nbsp;заявки до&nbsp;заключения экспертизы</h2>
+    <ol class="steps">
+      <li><span class="n">01</span><h3>Заявка и&nbsp;ТЗ</h3><p>Смотрим участок по&nbsp;карте и&nbsp;архивам, помогаем составить техническое задание.</p><span class="t">1 день</span></li>
+      <li><span class="n">02</span><h3>Программа и&nbsp;смета</h3><p>Фиксируем объёмы, цену и&nbsp;сроки в&nbsp;договоре. Цена не&nbsp;растёт после выезда.</p><span class="t">2–3 дня</span></li>
+      <li><span class="n">03</span><h3>Полевые работы</h3><p>Своё оборудование и&nbsp;бригады. Фото и&nbsp;сводка с&nbsp;объекта каждый день.</p><span class="t">от 3 дней</span></li>
+      <li><span class="n">04</span><h3>Камеральная обработка</h3><p>Лаборатория, расчёты, чертежи и&nbsp;модель в&nbsp;нужных форматах.</p><span class="t">от 5 дней</span></li>
+      <li><span class="n">05</span><h3>Отчёт и&nbsp;экспертиза</h3><p>Сдаём отчёт и&nbsp;отвечаем на&nbsp;замечания до&nbsp;положительного заключения.</p><span class="t">включено</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec projects" id="projects" aria-labelledby="projects-h">
+  <div class="wrap">
+    <p class="eyebrow">Проекты</p>
+    <h2 id="projects-h">Что уже измерили</h2>
+    <div class="cases">
+      <article class="case">
+        <div class="case-ph"><img src="assets/img/p_residential.webp" alt="Котлован жилого квартала на берегу реки, вид с высоты" width="1264" height="848" loading="lazy" decoding="async"><svg class="map" viewBox="0 0 320 200" data-seed="3" aria-hidden="true"></svg></div>
+        <p class="case-k">Жилой комплекс · 4,2 га</p>
+        <h3>Квартал на&nbsp;слабых грунтах у&nbsp;реки</h3>
+        <p>Геодезия, геология и&nbsp;экология одним договором. 46&nbsp;скважин, отчёт принят экспертизой без&nbsp;замечаний по&nbsp;грунтам.</p>
+        <dl><div><dt>Срок</dt><dd>34 дня</dd></div><div><dt>Скважин</dt><dd>46</dd></div></dl>
+      </article>
+      <article class="case">
+        <div class="case-ph"><img src="assets/img/p_industrial.webp" alt="Лазерный сканер в цехе, где не останавливают работу" width="1264" height="848" loading="lazy" decoding="async"><svg class="map" viewBox="0 0 320 200" data-seed="11" aria-hidden="true"></svg></div>
+        <p class="case-k">Промышленность · 18&nbsp;000 м²</p>
+        <h3>Сканирование цеха без&nbsp;остановки линии</h3>
+        <p>Облако точек на&nbsp;1,2&nbsp;млрд измерений, модель металлоконструкций для&nbsp;реконструкции кровли.</p>
+        <dl><div><dt>Срок</dt><dd>12 дней</dd></div><div><dt>Смен</dt><dd>6</dd></div></dl>
+      </article>
+      <article class="case">
+        <div class="case-ph"><img src="assets/img/p_pipeline.webp" alt="Просека трассы газопровода через лес и болото с высоты" width="1264" height="848" loading="lazy" decoding="async"><svg class="map" viewBox="0 0 320 200" data-seed="27" aria-hidden="true"></svg></div>
+        <p class="case-k">Инфраструктура · 62 км</p>
+        <h3>Трасса газопровода через&nbsp;болота</h3>
+        <p>Аэросъёмка с&nbsp;БПЛА, наземная съёмка переходов через&nbsp;реки и&nbsp;дороги, инженерная геология по&nbsp;всей трассе.</p>
+        <dl><div><dt>Срок</dt><dd>58 дней</dd></div><div><dt>Бригад</dt><dd>4</dd></div></dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-in">
+    <div>
+      <p class="eyebrow">Вопросы</p>
+      <h2 id="faq-h">Коротко о&nbsp;главном</h2>
+    </div>
+    <div class="acc">
+      <details><summary>Сколько стоят изыскания?</summary><p>Зависит от&nbsp;площади, масштаба съёмки, числа скважин и&nbsp;региона. Пришлите кадастровый номер или&nbsp;координаты участка&nbsp;– смету пришлём за&nbsp;один рабочий день.</p></details>
+      <details><summary>Сколько времени занимает весь комплекс?</summary><p>Для участка до&nbsp;5&nbsp;га обычно 3–6 недель от&nbsp;договора до&nbsp;отчёта. Геодезию и&nbsp;геологию ведём параллельно, чтобы не&nbsp;терять время.</p></details>
+      <details><summary>Что если экспертиза выдаст замечания?</summary><p>Отвечаем на&nbsp;замечания и&nbsp;исправляем отчёт без&nbsp;доплаты, пока не&nbsp;будет положительного заключения.</p></details>
+      <details><summary>Работаете ли вы в&nbsp;других регионах?</summary><p>Да, полевые бригады выезжают в&nbsp;38&nbsp;регионов. Стоимость выезда считаем сразу в&nbsp;смете.</p></details>
+      <details><summary>В&nbsp;каких форматах вы сдаёте результаты?</summary><p>Отчёт в&nbsp;PDF и&nbsp;XML для экспертизы, чертежи в&nbsp;DWG, модель рельефа и&nbsp;облака точек в&nbsp;форматах вашего ПО.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contacts" id="contacts" aria-labelledby="contacts-h">
+  <div class="wrap con-in">
+    <div class="con-t">
+      <p class="eyebrow">Смета за&nbsp;1 день</p>
+      <h2 id="contacts-h">Расскажите об&nbsp;участке</h2>
+      <p class="sub">Инженер посмотрит участок по&nbsp;карте, уточнит задачу и&nbsp;пришлёт смету с&nbsp;программой работ.</p>
+      <dl class="con-l">
+        <div><dt>Телефон</dt><dd><a href="tel:+78120000000">+7 (812) 000-00-00</a></dd></div>
+        <div><dt>Почта</dt><dd><a href="mailto:hello@izoliniya.example">hello@izoliniya.example</a></dd></div>
+        <div><dt>Офис</dt><dd>Санкт-Петербург, условный адрес</dd></div>
+        <div><dt>Часы</dt><dd>Пн–пт 9:00–18:00</dd></div>
+      </dl>
+    </div>
+    <form class="form" id="form" novalidate>
+      <div class="f2">
+        <label>Имя<input name="name" type="text" autocomplete="name" required></label>
+        <label>Компания<input name="company" type="text" autocomplete="organization"></label>
+      </div>
+      <div class="f2">
+        <label>Телефон<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7" required></label>
+        <label>Почта<input name="email" type="email" autocomplete="email"></label>
+      </div>
+      <label>Что нужно
+        <select name="kind">
+          <option>Комплекс изысканий</option><option>Геодезия</option><option>Геология</option><option>Экология</option><option>Лазерное сканирование</option><option>Мониторинг деформаций</option><option>Межевание и кадастр</option>
+        </select>
+      </label>
+      <label>Участок<input name="site" type="text" placeholder="Кадастровый номер, адрес или координаты"></label>
+      <label class="ok"><input type="checkbox" name="agree" required> <span>Согласен на&nbsp;обработку персональных данных</span></label>
+      <button class="btn btn-a" type="submit">Получить смету</button>
+      <p class="form-m" id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p class="logo"><svg class="logo-m" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 28c6-10 12-14 20-12s9 9 8 14" /><path d="M10 31c5-7 10-10 16-9s7 5 6 9" /><path d="M14 34c4-4 7-6 11-5s5 3 4 5" /><circle cx="25" cy="17" r="2.2" /></svg><span>Изолиния</span></p>
+    <p>© 2026 Изолиния. Концепт-сайт для портфолио: компания вымышлена, цифры, проекты и&nbsp;контакты условные. Фото созданы нейросетью.</p>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <a class="btn btn-a" href="#contacts">Запросить смету</a>
+  <a class="btn btn-g" href="tel:+78120000000">Позвонить</a>
+</div>
+
+<script src="assets/terrain.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
